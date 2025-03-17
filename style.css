@@ -6,15 +6,15 @@ body {
 
 #image {
     max-width: 100%;
-    height: max-content;
+    height: auto;
     display: block;
     margin: 0 auto;
-
 }
 
-@keyframes borderBoxTransition {
-    0% { background-color: black; }
-    100% { background-color: #3C0352; }
+@media (max-height: 600px) {
+    #image {
+        height: 400px;
+    }
 }
 
 h2 {
